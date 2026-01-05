@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "craveblock",
+    "slug": "craveblock",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "craveblock",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.maksym.rastavetskyi.craveblock",
+      "infoPlist": {
+        "NSDeviceUsageDescription": "Uses Screen Time API for app blocking",
+        "NSHealthShareUsageDescription": "Digital activity analysis",
+        "NSPhotoLibraryUsageDescription": "Displaying app icons",
+        "NSLocalNetworkUsageDescription": "Settings synchronization"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.maksym.rastavetskyi.craveblock"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "156ab373-4a85-4ce6-b0c4-5110be390960"
+      }
+    },
+    "owner": "kapilmykola"
+  }
+}
